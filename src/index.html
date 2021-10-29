@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <!--NOMBRE DE PESTAÑA DEL NAVEGADOR-->
     <title>Tarjeta de crédito válida</title>
+    <!--LINK A ARCHIVO CSS QUE ESTA EN EL PROYECTO-->
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
     <script src="index.js" type="module"></script>
+    <link
+      rel="shortcut icon"
+      href="https://images.vexels.com/media/users/3/134495/isolated/preview/5d9e3597aa668bdbb6a36d364ba53dd9-postre-de-comida-dulce-cupcake.png"
+    />
+  </head>
+
+  <body>
+    <!--TITULO DE LA PAGINA-->
+    <h1 id="titulo">Pasteleria "Caley"</h1>
+
+    <div class="principal">
+      <!--SECCION DE LA TARJETA-->
+      <section class="tarjeta" id="tarjeta">
+        <!--SECCION DEL LOGO DE VISA-->
+        <div class="logoRed" id="logoRed"></div>
+
+        <!--SECCION DE CHIP-->
+        <div>
+          <img
+            src="https://pngimage.net/wp-content/uploads/2018/05/chip-credit-card-png-9-230x200.png"
+            class="chip"
+            alt=""
+          />
+        </div>
+
+        <!--SECCION DE DATOS A INGRESAR-->
+        <div class="datos">
+          <!--SECCION DE NUMERO DE TARJETA DE CREDITO-->
+          <div class="grupo" id="numeroTarjeta">
+            <p class="etiqueta">Numero de Tarjeta</p>
+            <p class="numero" id="numeroCod">#### #### #### ####</p>
+          </div>
+          <div class="grupoNomFec">
+            <!--SECCION DE NOMBRE DE TITULAR-->
+            <div class="grupo" id="nombreTitular">
+              <p class="etiqueta">Nombre del Titular</p>
+              <p class="nombre">NOMBRES Y APELLIDOS</p>
+            </div>
+            <!--SECCION DE FECHA DE EXPIRACION-->
+            <div class="grupo" id="fechaExpiracion">
+              <p class="etiqueta">Expira</p>
+              <p class="expiracion">MM/AA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION DE FORMULARIO-->
+      <form action="" class="formulario" id="formulario">
+        <!--DATOS A INGRESAR-->
+        <div clase="DatosTarjeta" id="DatosTarjeta">
+          <div class="grupo">
+            <label for="inputNumero">NUMERO DE TARJETA</label>
+            <input
+              type="text"
+              id="inputNumero"
+              maxlength="19"
+              autocomplete="off"
+              placeholder="#### #### #### ####"
+            />
+          </div>
+          <div class="grupo">
+            <label for="inputNombre">NOMBRE DEL TITULAR</label>
+            <input
+              type="text"
+              id="inputNombre"
+              maxlength="23"
+              autocomplete="off"
+              placeholder="NOMBRES Y APELLIDOS"
+            />
+          </div>
+
+          <div class="caja">
+            <div class="grupo exp">
+              <label for="selMes">EXPIRA</label>
+              <div class="grupoin">
+                <input
+                  type="text"
+                  id="inputExp"
+                  maxlength="5"
+                  autocomplete="on"
+                  placeholder="MM/AA"
+                />
+              </div>
+            </div>
+            <button type="submit" class="btnValidar" id="btnValidar">
+              VALIDAR
+            </button>
+          </div>
+        </div>
+        <!--MENSAJE A MOSTRAR-->
+        <div id="contenedorMensaje">
+          <img id="imgMensaje" src="" alt="" />
+          <p clase="Mensaje" id="Mensaje"></p>
+        </div>
+      </form>
+    </div>
+
+    <!--PIE DE PAGINA-->
+    <div id="pie">
+      <footer id="footer">
+        Copyright © 2021 - Elaborado por Jocelyn Camero
+      </footer>
+    </div>
   </body>
 </html>
