@@ -1,0 +1,223 @@
+/* QUITAR MARGIN Y PADDING A TODA LA PAGINA */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* COLOCAR FONDO A LA PAGINA Y CENTRAR CONTENIDO */
+body {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-popcorn-sea-salt-cheese-milk-cap-cake-background-image_267225.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CENTRAR TITULO Y A LA TARJETA */
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*ESTILO AL TITULO DE LA PAGINA*/
+#titulo {
+  font-size: 600%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(243, 152, 195);
+  -webkit-text-stroke: 2px rgb(62, 128, 102);
+  margin-bottom: 55px;
+  margin-top: 55px;
+}
+
+/*ESTILO A LA TARJETA*/
+.tarjeta {
+  justify-content: space-between;
+  padding: 20px;
+
+  width: 450px;
+  height: 280px;
+
+  background-color: rgb(146, 211, 189);
+  border-radius: 20px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(97, 90, 90);
+  box-shadow: 0 10px 10px 0 rgba(41, 43, 44, 0.3); /* SOMBRA */
+
+  z-index: 2; /* PARA QUE LA TARJETA ESTE POR ENCIMA */
+}
+
+/*ESTILO AL PASAR CON EL MOUSE POR LA TARJETA*/
+.tarjeta:hover {
+  transform: scale(1.1); /*LUPA*/
+}
+
+/*ESTILO AL CONTENEDOR DEL LOGO DE RED*/
+.logoRed {
+  text-align: right;
+  min-height: 70px;
+}
+
+/* ESTILO A LA IMAGEN DEL LOGO DE RED */
+.logoRed img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  max-width: 80px;
+}
+
+/*ESTILO A LA IMAGEN DE CHIP*/
+.chip {
+  width: 100%;
+  max-width: 50px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+/* ESTILO A LAS ETIQUETAS DE LA TARJETA */
+.etiqueta {
+  color: rgb(55, 59, 57);
+  font-size: 12pt;
+  font-weight: 550;
+  padding-bottom: 20px;
+}
+
+/* ESTILO A LOS VALORES INGRESADOS QUE APARECEN EN LA TARJETA */
+.numero,
+.nombre,
+.expiracion {
+  color: rgb(61, 64, 65);
+  font-size: 16pt;
+  padding-bottom: 20px;
+}
+
+/* ALINEAR EL NOMBRE Y LA FECHA DE LA TARJETA EN UNA MISMA LINEA */
+.grupoNomFec {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ESTILO A LA PARTE DEL FORMULARIO*/
+.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 30px 30px 30px;
+
+  width: 650px;
+  max-height: 280px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+
+  position: relative;
+  top: -75px;
+  z-index: 1; /* PARA QUE LA TARJETA ESTE POR DEBAJO */
+}
+
+/* ESTILOS A LOS LABEL QUE SE ENCUENTREN DENTRO DEL FORMULARIO */
+.formulario label {
+  color: rgb(55, 59, 57);
+  font-size: 12pt;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+/* DARLE ESTILO A TODOS LOS INPUT */
+input {
+  height: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 12pt;
+}
+
+/* ORGANIZAR EN COLUMNA LOS ELEMENTOS QUE ESTAN DENTRO DEL FORMULARIO */
+.formulario .grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* ALINEAR FECHA DE EXPIRACION CON BOTON EN UNA MISMA FILA */
+.caja {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ESTILO AL BOTON VALIDAR */
+.formulario .btnValidar {
+  font-size: 15pt;
+  font-weight: 30;
+  color: white;
+
+  background-color: rgb(43, 44, 41);
+
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* ESTILO AL CONTENEDOR MENSAJE DE RESPUESTA */
+#contenedorMensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+/* ESTILO A LA IMAGEN DEL MENSAJE */
+#imgMensaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*ESTILO AL MENSAJE*/
+#Mensaje {
+  text-align: center; /*ALINEAR TEXTO EN EL CENTRO*/
+  font-size: 22pt;
+  font-weight: 60;
+  color: rgb(61, 64, 65);
+}
+
+/*ESTILO AL BOTON VALIDAR*/
+#btnVolver {
+  font-size: 15pt;
+  font-weight: 30;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: rgb(43, 44, 41);
+
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+/* APLICAR COLOR DE FONDO Y CENTRAR AL CONTENEDOR DEL PIE DE PAGINA */
+#pie {
+  display: flex;
+  align-items: center; /*ALINEA EN EL CENTRO VERTICALMENTE*/
+  justify-content: center; /*ALINEA EN EL CENTRO HORIZONTALMENTE*/
+  width: 100%; /* CUBRE TODO EL ANCHO DISPONIBLE */
+  height: 40px;
+  background-color: rgb(66, 145, 126, 255);
+}
+
+/*ESTILO AL PIE DE PAGINA*/
+#footer {
+  color: rgb(43, 44, 41);
+}
