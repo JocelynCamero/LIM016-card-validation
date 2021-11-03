@@ -17,6 +17,12 @@ const bloqueMensaje = document.getElementById("contenedorMensaje");
 const datosIngre = document.getElementById("DatosTarjeta");
 const validar = document.getElementById("formulario");
 
+
+//ocultar contenedor de mensaje al inicio
+window.onload = function () {
+    bloqueMensaje.style.display = "none";
+}
+
 // INPUT NUMERO DE TARJETA
 numIngresado.addEventListener("keyup", (e) => {
     let valorInput = e.target.value
