@@ -5,7 +5,7 @@ Este proyecto consiste en **validar un numero de tarjeta de crédito** para pode
 ## IMAGEN FINAL DE MI PROYECTO
 
 **Página de inicio**
-![Pagina principal](../imagenes/index.png)
+![Pagina principal](../src/index.png)
 **Mensaje**
 
 ## INVESTIGACIÓN UX
