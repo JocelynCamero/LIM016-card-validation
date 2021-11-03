@@ -6,7 +6,31 @@ Este proyecto consiste en **validar un numero de tarjeta de crédito** para pode
 
 **Página de inicio**
 ![Pagina principal](index.png)
-**Mensaje**
+Esta es la pagina que aparecera al cargar la aplicación web.
+
+**Mensajes de "alert"**
+![Mensaje de alerta 1](alert1.png)
+Este mensaje de alerta sale cuando no se han llenado todos los campos del formulario.
+
+![Mensaje de alerta 2](alert2.png)
+Este mensaje de alerta sale cuando no se han llenado todos los digitos de la tarjeta de credito.
+
+**Logos de red de tarjeta de credito**
+![Logo de red 1](red1.png)
+Si el numero de la tarjeta de credito empieza con 3 saldra el logo de American Express en la tarjeta.
+
+![Logo de red 2](red2.png)
+Si el numero de la tarjeta de credito empieza con 4 saldra el logo de Visa en la tarjeta.
+
+![Logo de red 3](red3.png)
+Si el numero de la tarjeta de credito empieza con 5 saldra el logo de Master Card en la tarjeta.
+
+**Respuesta al validar tarjeta**
+![Respuesta de tarjeta invalida](mensaje1.png)
+Esta sera la respuesta si el numero de la tarjeta de credito es invalida.
+
+![Respuesta de tarjeta valida](mensaje2.png)
+Esta sera la respuesta si el numero de la tarjeta de credito es valida.
 
 ## INVESTIGACIÓN UX
 
