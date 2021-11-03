@@ -63,8 +63,12 @@ Estos datos se visualizaran en la pantalla simulando la imagen de una tarjeta de
 
 **4.** **Feedback recibido:**
 
-- Colocarle una imagen de chip en la tarjeta para que se vea mas real.
 - Usar tonos pasteles para el fondo.
 - Diferenciar entre los tipos de tarjeta de crédito (Visa, MasterCard y American Express).
 
 **5.** **Prototipo Final**
+![](proto1.png)
+![](proto2.png)
+![](proto3.png)
+
+> Este es el prototipo realizado en Figma.
