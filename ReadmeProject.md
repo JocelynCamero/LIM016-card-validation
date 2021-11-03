@@ -67,6 +67,7 @@ Estos datos se visualizaran en la pantalla simulando la imagen de una tarjeta de
 - Diferenciar entre los tipos de tarjeta de crédito (Visa, MasterCard y American Express).
 
 **5.** **Prototipo Final**
+
 ![](proto1.png)
 ![](proto2.png)
 ![](proto3.png)
