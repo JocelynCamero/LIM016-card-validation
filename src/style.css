@@ -105,7 +105,7 @@ body {
   padding: 120px 30px 30px 30px;
 
   width: 650px;
-  height: 220px;
+  max-height: 280px;
 
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
@@ -160,6 +160,10 @@ input {
 
 /* ESTILO AL CONTENEDOR MENSAJE DE RESPUESTA */
 #contenedorMensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 /* ESTILO A LA IMAGEN DEL MENSAJE */
@@ -183,6 +187,26 @@ input {
   color: rgb(61, 64, 65);
 }
 
+/*ESTILO AL BOTON VALIDAR*/
+#btnVolver {
+  font-size: 15pt;
+  font-weight: 30;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: rgb(43, 44, 41);
+
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+}
+
 /* APLICAR COLOR DE FONDO Y CENTRAR AL CONTENEDOR DEL PIE DE PAGINA */
 #pie {
   display: flex;
@@ -193,7 +217,7 @@ input {
   background-color: rgb(66, 145, 126, 255);
 }
 
+/*ESTILO AL PIE DE PAGINA*/
 #footer {
   color: rgb(43, 44, 41);
-  font-weight: 550;
 }

@@ -16,7 +16,9 @@ const bloqueMensaje = document.getElementById("contenedorMensaje");
 
 const datosIngre = document.getElementById("DatosTarjeta");
 const validar = document.getElementById("formulario");
+const volver = document.getElementById("btnVolver");
 
+let existeLogo;
 
 //ocultar contenedor de mensaje al inicio
 window.onload = function () {
@@ -43,23 +45,36 @@ numIngresado.addEventListener("keyup", (e) => {
     }
 
     if (valorInput[0] == 4) {
+        existeLogo = true;
         logoRed.innerHTML = "";
         const imagen = document.createElement("img");
+        imagen.id = "logo";
         imagen.src =
             "https://logos-marcas.com/wp-content/uploads/2020/04/Visa-Emblema.png";
         logoRed.appendChild(imagen);
-    } else if (valorInput[0] == 5) {
-        logoRed.innerHTML = "";
-        const imagen = document.createElement("img");
-        imagen.src =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png";
-        logoRed.appendChild(imagen);
-    } else if (valorInput[0] == 3) {
-        logoRed.innerHTML = "";
-        const imagen = document.createElement("img");
-        imagen.src =
-            "https://www.pngkit.com/png/full/893-8931421_casino-que-acepte-american-express-american-express-centurion.png";
-        logoRed.appendChild(imagen);
+    } else {
+        if (valorInput[0] == 5) {
+            existeLogo = true;
+            logoRed.innerHTML = "";
+            const imagen = document.createElement("img");
+            imagen.id = "logo";
+            imagen.src =
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png";
+            logoRed.appendChild(imagen);
+        } else {
+            if (valorInput[0] == 3) {
+                existeLogo = true;
+                logoRed.innerHTML = "";
+                const imagen = document.createElement("img");
+                imagen.id = "logo";
+                imagen.src =
+                    "https://www.pngkit.com/png/full/893-8931421_casino-que-acepte-american-express-american-express-centurion.png";
+                logoRed.appendChild(imagen);
+            }
+            else {
+                existeLogo = false;
+            }
+        }
     }
 });
 
@@ -114,3 +129,22 @@ validar.addEventListener("submit", (e) => {
         }
     }
 });
+
+function limpiarCampos() {
+    numIngresado.value = "";
+    nomIngresado.value = "";
+    mesIngresado.value = "";
+    verNumero.innerHTML = "#### #### #### ####";
+    verNombre.innerHTML = "NOMBRES Y APELLIDOS";
+    verMes.innerHTML = "MM/AA";
+    if (existeLogo) {
+        logoRed.removeChild(document.getElementById("logo"));
+    }
+}
+
+volver.addEventListener("click", () => {
+    bloqueMensaje.style.display = "none";
+    datosIngre.style.display = "block";
+    limpiarCampos();
+}
+);
