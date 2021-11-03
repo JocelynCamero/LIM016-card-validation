@@ -57,6 +57,10 @@ Este proyecto consiste en **validar un numero de tarjeta de crédito** para pode
 Estos datos se visualizaran en la pantalla simulando la imagen de una tarjeta de crédito a excepción de los números de la tarjeta el cual solo se visualizará los últimos 4 dígitos. Además se podrá visualizar el logo de **Visa**, **MasterCard** o **American Express** según corresponda. También tendrá un botón a disposición para poder validar su compra y su tarjeta de crédito.
 
 **3.** **Prototipo en papel**
+![](prototipoPapel.jpeg)
+
+> Este es el prototipo realizado en papel.
+
 **4.** **Feedback recibido:**
 
 - Colocarle una imagen de chip en la tarjeta para que se vea mas real.
