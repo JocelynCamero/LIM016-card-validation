@@ -6,6 +6,7 @@ Este proyecto consiste en **validar un numero de tarjeta de crédito** para pode
 
 ### Página de inicio
 
+![]()
 ![Pagina principal](index.png)
 
 > Esta es la pagina que aparecera al cargar la aplicación web.

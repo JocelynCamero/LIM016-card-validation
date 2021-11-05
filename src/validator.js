@@ -5,7 +5,7 @@ const validator = {
         let totalSuma;
         let cifra;
         let digitos = Array.from(creditNumber); //Convertir una cadena en arreglo
-        let reves = digitos.slice().reverse(); //Reves de arreglo
+        let reves = digitos.reverse(); //Reves de arreglo
         if (creditNumber == "") {
             return false;
         } else {
